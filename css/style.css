@@ -4,6 +4,44 @@
     padding:0;
 }
 
+body {
+    font-family: 'Rubik Mono One', sans-serif; 
+    
+}
+
+nav {
+    position:relative
+}
+
+.menu{
+    position: fixed;
+    right:0;
+    top:0;
+}
+
+.menu li{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 50%;
+    list-style: none;
+    background-color: white;
+    text-decoration: none;
+    line-height:30px;
+    text-align: center;
+    
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    vertical-align: 30px;
+    font-size: 10px;
+
+}
+
 .container {
     width: 100%;
     height: 100vh; 
