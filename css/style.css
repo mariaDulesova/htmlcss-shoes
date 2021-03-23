@@ -1,3 +1,5 @@
+/* General */
+
 *{
     box-sizing: border-box;
     margin:0;
@@ -9,16 +11,14 @@ body {
     
 }
 
-nav {
-    position:relative
-}
 
+/* Menu */
 .menu{
     position: fixed;
     right:0;
     top:0;
+    z-index: 1;
 }
-
 .menu li{
     display: inline-block;
     width: 30px;
@@ -31,22 +31,24 @@ nav {
     text-decoration: none;
     line-height:30px;
     text-align: center;
-    
 }
-
 .menu a {
     text-decoration: none;
     color: black;
     vertical-align: 30px;
     font-size: 10px;
-
+}
+a:hover p{
+    font-size: 20px;
 }
 
+
+/* Contenuto Main */
 .container {
+    position: relative;
     width: 100%;
-    height: 100vh; 
+    height: 100vh;   
 }
-
 #red{
     background-color: red;
 }
@@ -56,3 +58,31 @@ nav {
 #yellow {
     background-color: yellow;
 }
+
+
+.shoes {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+}
+.shoes img {
+    width: 100%;
+}
+.shoes p {
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#red p,
+#green p {
+    color: yellow;
+}
+#yellow p {
+    color: green;
+}
+
+
+
+
